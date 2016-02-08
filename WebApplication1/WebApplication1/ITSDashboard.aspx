@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminDashboard.aspx.cs" Inherits="WebApplication1.AdminDashboard" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ITSUser.Master" AutoEventWireup="true" CodeBehind="ITSDashboard.aspx.cs" Inherits="WebApplication1.ITSDashboard" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     
+      
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -249,7 +249,7 @@
 <!-- page script -->
     <script>
         $(function () {
-            "use strict";            
+            "use strict";
             //DONUT CHART
             var donut = new Morris.Donut({
                 element: 'Blr-chart',
@@ -298,7 +298,8 @@
                 ],
                 hideHover: 'auto'
             });
-            
+
         });
 </script>
+
 </asp:Content>
