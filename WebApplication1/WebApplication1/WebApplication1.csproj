@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminCandidateSearch.aspx" />
     <Content Include="AdminDashboard.aspx" />
     <Content Include="AdminDefault.aspx" />
     <Content Include="AdminReports.aspx" />
@@ -132,6 +133,7 @@
     <Content Include="dist\js\demo.js" />
     <Content Include="dist\js\pages\dashboard.js" />
     <Content Include="dist\js\pages\dashboard2.js" />
+    <Content Include="ITSCandidateSearch.aspx" />
     <Content Include="ITSDashboard.aspx" />
     <Content Include="ITSDefault.aspx" />
     <Content Include="ITSReport.aspx" />
@@ -920,6 +922,13 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="AdminCandidateSearch.aspx.cs">
+      <DependentUpon>AdminCandidateSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCandidateSearch.aspx.designer.cs">
+      <DependentUpon>AdminCandidateSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminDashboard.aspx.cs">
       <DependentUpon>AdminDashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -940,6 +949,21 @@
     </Compile>
     <Compile Include="AdminReports.aspx.designer.cs">
       <DependentUpon>AdminReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dBaseConnection.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ITSCandidateSearch.aspx.cs">
+      <DependentUpon>ITSCandidateSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ITSCandidateSearch.aspx.designer.cs">
+      <DependentUpon>ITSCandidateSearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="ITSDashboard.aspx.cs">
       <DependentUpon>ITSDashboard.aspx</DependentUpon>
@@ -968,14 +992,6 @@
     </Compile>
     <Compile Include="ITSUser.Master.designer.cs">
       <DependentUpon>ITSUser.Master</DependentUpon>
-    </Compile>
-    <Compile Include="dBaseConnection.cs" />
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Welcome2Deloitte.Master.cs">

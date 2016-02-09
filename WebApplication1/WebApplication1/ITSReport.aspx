@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ITSUser.Master" AutoEventWireup="true" CodeBehind="ITSReport.aspx.cs" Inherits="WebApplication1.ITSReport" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-       
+    
     <form id="form1" runat="server">  
          <div id="mainContainer" class="box-header with-border">  
             <div class="shadowBox">  
@@ -13,7 +13,7 @@
                         <div class="row">  
                             <div class="col-lg-12 ">  
                                 <div class="table-responsive">  
-                                    <asp:GridView ID="grdCustomer" AllowPaging="true" AlternatingRowStyle-BackColor="WhiteSmoke"  runat="server" Width="95%" CssClass="table table-striped table-bordered table-hover"  DataKeyNames="Requisition NO" EmptyDataText="There are no data records to display." AlternatingRowStyle-BorderStyle="Solid"  PagerSettings-Mode="NextPrevious" PagerStyle-BorderStyle="Solid" ViewStateMode="Inherit" AutoGenerateColumns="False" OnPageIndexChanging="grdCustomer_PageIndexChanging">  
+                                    <asp:GridView ID="grdITSUser" AllowPaging="true" AlternatingRowStyle-BackColor="WhiteSmoke"  runat="server" Width="95%" CssClass="table table-striped table-bordered table-hover"  DataKeyNames="Requisition NO" EmptyDataText="There are no data records to display." AlternatingRowStyle-BorderStyle="Solid"  PagerSettings-Mode="NextPrevious" PagerStyle-BorderStyle="Solid" ViewStateMode="Inherit" AutoGenerateColumns="False" OnPageIndexChanging="grdCustomer_PageIndexChanging">  
                                         <Columns>  
                                             <asp:BoundField DataField="Requisition NO" HeaderText="Requisition NO" ReadOnly="True" SortExpression="Requisition NO" />  
                                             <asp:BoundField DataField="Candidate ID" HeaderText="Candidate ID" SortExpression="Candidate ID" HeaderStyle-CssClass="visible-lg" ItemStyle-CssClass="visible-lg" />  

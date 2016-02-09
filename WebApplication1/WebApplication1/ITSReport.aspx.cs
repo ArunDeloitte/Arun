@@ -25,13 +25,13 @@ namespace WebApplication1
             OleDbCommand oleObj = new OleDbCommand("select * from OnBoarding", dBaseObj._dbConnection);
             myAdapptor.SelectCommand = oleObj;
             myAdapptor.Fill(myDataSet, "OnBoarding");
-            grdCustomer.DataSource = myDataSet.Tables["OnBoarding"];
-            grdCustomer.DataBind();
+            grdITSUser.DataSource = myDataSet.Tables["OnBoarding"];
+            grdITSUser.DataBind();
         }
         protected void grdCustomer_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            grdCustomer.PageIndex = e.NewPageIndex;
-            grdCustomer.DataBind();
+            grdITSUser.PageIndex = e.NewPageIndex;
+            grdITSUser.DataBind();
         }
     }
 }

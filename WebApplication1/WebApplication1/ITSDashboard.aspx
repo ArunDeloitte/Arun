@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ITSUser.Master" AutoEventWireup="true" CodeBehind="ITSDashboard.aspx.cs" Inherits="WebApplication1.ITSDashboard" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -246,60 +245,5 @@
 <script src="../../dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<!-- page script -->
-    <script>
-        $(function () {
-            "use strict";
-            //DONUT CHART
-            var donut = new Morris.Donut({
-                element: 'Blr-chart',
-                resize: true,
-                colors: ["#3c8dbc", "#f56954", "#00a65a"],
-                data: [
-                  { label: "EnRolled", value: 12 },
-                  { label: "Outstanding", value: 30 },
-                  { label: "Pending", value: 20 }
-                ],
-                hideHover: 'auto'
-            });
-            //DONUT CHART
-            var donut = new Morris.Donut({
-                element: 'Hyd-chart',
-                resize: true,
-                colors: ["#3c8dbc", "#f56954", "#00a65a"],
-                data: [
-                  { label: "EnRolled", value: 12 },
-                  { label: "Outstanding", value: 30 },
-                  { label: "Pending", value: 20 }
-                ],
-                hideHover: 'auto'
-            });
-            //DONUT CHART
-            var donut = new Morris.Donut({
-                element: 'Mum-chart',
-                resize: true,
-                colors: ["#3c8dbc", "#f56954", "#00a65a"],
-                data: [
-                  { label: "EnRolled", value: 12 },
-                  { label: "Outstanding", value: 30 },
-                  { label: "Pending", value: 20 }
-                ],
-                hideHover: 'auto'
-            });
-            //DONUT CHART
-            var donut = new Morris.Donut({
-                element: 'Gur-chart',
-                resize: true,
-                colors: ["#3c8dbc", "#f56954", "#00a65a"],
-                data: [
-                  { label: "EnRolled", value: 12 },
-                  { label: "Outstanding", value: 30 },
-                  { label: "Pending", value: 20 }
-                ],
-                hideHover: 'auto'
-            });
-
-        });
-</script>
-
+<!-- page script -->    
 </asp:Content>
